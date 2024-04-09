@@ -73,7 +73,8 @@ namespace HttpsRedirect
                 var ranges = new List<string>
                 {
                     "::1/128",
-                    "fc00::/7"
+                    "fc00::/7",
+                    "fe80::/10"
                 };
 
                 return ranges.Select(range => IPAddressRange.Parse(range))
